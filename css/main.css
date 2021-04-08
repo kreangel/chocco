@@ -75,7 +75,7 @@ img {
 
 .hero {
   background: url("../img/decor/big-leaf.png") right bottom no-repeat;
-  background-color: #61c4d9;
+  background-color: red;
   height: 100vh;
   min-height: 650px;
   color: #fff;
