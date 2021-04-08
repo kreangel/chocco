@@ -1,0 +1,49 @@
+.hero {
+    background: url("../img/decor/big-leaf.png") right bottom no-repeat;
+    background-color: $blue;
+    height: 100vh;
+    min-height: 650px;
+    color: #fff;
+    position: relative;
+
+    &:before {
+        position: absolute;
+        bottom: -40px;
+        left: 2%;
+        content: url(../img/decor/corner-leaf.png);
+    }
+
+    &:after {
+        position: absolute;
+        bottom: -37px;
+        right: 0;
+        content: url(../img/decor/berries.png);
+    }
+}
+
+.hero__title-section {
+    width: 46%;
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 24px 0 45px 0;
+    background: url("../img/decor/chocolates.png") right center / 50% auto no-repeat;
+}
+
+.hero__main-title {
+    font-size: 48px;
+    line-height: 1.23;
+    font-weight: bold;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+}
+
+.hero__title-desc {
+    font-size: 21px;
+    margin-bottom: 52px;
+    padding-right: 15%;
+}
