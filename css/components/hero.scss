@@ -2,20 +2,30 @@
     background: url("../img/decor/big-leaf.png") right bottom no-repeat;
     background-color: $blue;
     height: 100vh;
-    min-height: 650px;
+    min-height: rem(650px);
     color: #fff;
     position: relative;
 
+    @include tablets {
+        background-position: right bottom 80%;
+    }
+
+    &:before, &:after {
+        @include tablets {
+            display: none;
+        }
+    }
+
     &:before {
         position: absolute;
-        bottom: -40px;
+        bottom: rem(-40px);
         left: 2%;
         content: url(../img/decor/corner-leaf.png);
     }
 
     &:after {
         position: absolute;
-        bottom: -37px;
+        bottom: rem(-37px);
         right: 0;
         content: url(../img/decor/berries.png);
     }
@@ -23,6 +33,26 @@
 
 .hero__title-section {
     width: 46%;
+
+    @include tablets {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        &:before {
+            content: url("../img/decor/hero-bars.png");
+        }
+    }
+}
+
+.hero__icons-section {
+    @include tablets {
+        display: none;
+    }
 }
 
 .hero__container {
@@ -30,20 +60,28 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding: 24px 0 45px 0;
+    padding: rem(24px) 0 rem(45px) 0;
     background: url("../img/decor/chocolates.png") right center / 50% auto no-repeat;
+
+    @include tablets {
+        background: none;
+    }
 }
 
 .hero__main-title {
-    font-size: 48px;
+    font-size: rem(48px);
     line-height: 1.23;
     font-weight: bold;
-    margin-bottom: 18px;
+    margin-bottom: rem(18px);
     text-transform: uppercase;
 }
 
 .hero__title-desc {
-    font-size: 21px;
-    margin-bottom: 52px;
+    font-size: rem(21px);
+    margin-bottom: rem(52px);
     padding-right: 15%;
+
+    @include tablets {
+        padding: 0 25%;
+    }
 }

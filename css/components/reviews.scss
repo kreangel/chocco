@@ -4,52 +4,52 @@
     &:before {
         position: absolute;
         right: 0;
-        top: 22px;
+        top: rem(22px);
         content: url(../img/decor/side-leaf-1.png)
     }
 }
 
 .reviews-section {
     position: relative;
-    background: url(../img/decor/berries-3.png) right 2% top 40px no-repeat;
+    background: url(../img/decor/berries-3.png) right 2% top rem(40px) no-repeat;
 
     &:before {
         position: absolute;
         left: 0;
-        bottom: -150px;
+        bottom: rem(-150px);
         content: url(../img/decor/side-leaf-2.png)
     }
 
     &:after {
         position: absolute;
         left: 0;
-        bottom: -87px;
+        bottom: rem(-87px);
         content: url(../img/decor/berries-4.png)
     }
 }
 
 .reviews-section__title {
-    margin-bottom: 33px;
+    margin-bottom: rem(33px);
 }
 
 .reviews__display {
     background: #f8faf9;
-    padding: 40px;
-    margin-bottom: 15px;
+    padding: rem(40px);
+    margin-bottom: rem(15px);
     overflow: hidden;
     position: relative;
 
     &:before {
         content: "";
         display: block;
-        width: 90px;
-        height: 90px;
+        width: rem(90px);
+        height: rem(90px);
         background: #fff;
         border-radius: 50%;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        top: -65px;
+        top: rem(-65px);
     }
 }
 
@@ -58,8 +58,8 @@
 }
 
 .reviews__avatar {
-    width: 254px;
-    height: 265px;
+    width: rem(254px);
+    height: rem(265px);
 }
 
 .reviews__avatar-img {
@@ -70,25 +70,25 @@
 
 .reviews__content {
     flex: 1;
-    margin-left: 38px;
+    margin-left: rem(38px);
 }
 
 .reviews__title {
-    font-size: 27px;
+    font-size: rem(27px);
     font-weight: bold;
-    margin: 29px 0 13px 0;
+    margin: rem(29px) 0 rem(13px) 0;
     color: black;
 }
 
 .reviews__text {
-    font-size: 18px;
+    font-size: rem(18px);
     line-height: 1.25;
-    margin-bottom: 29px;
-    padding-right: 123px;
+    margin-bottom: rem(29px);
+    padding-right: rem(123px);
 }
 
 .reviews__author {
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: bold;
     color: black;
 }

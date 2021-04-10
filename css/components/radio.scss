@@ -26,16 +26,16 @@
 }
 
 .radio__visible {
-    width: 26px;
-    height: 26px;
+    width: rem(26px);
+    height: rem(26px);
     position: relative;
     border-radius: 50%;
     background: #fff;
     
     &:before {
         content: "";
-        width: 14px;
-        height: 14px;
+        width: rem(14px);
+        height: rem(14px);
         background: #365a49;
         border-radius: 50%;
         position: absolute;
@@ -47,5 +47,5 @@
 }
 
 .radio__title {
-    padding: 0 17px;
+    padding: 0 rem(17px);
 }

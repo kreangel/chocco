@@ -5,13 +5,13 @@
     &:before {
         position: absolute;
         content: url(../img/decor/berries-1.png);
-        left: 51px;
-        bottom: 69px;
+        left: rem(51px);
+        bottom: rem(69px);
     }
     &:after {
         position: absolute;
         content: url(../img/decor/leaf.png);
-        right: 10px;
-        bottom: 58px;
+        right: rem(10px);
+        bottom: rem(58px);
     }
 }

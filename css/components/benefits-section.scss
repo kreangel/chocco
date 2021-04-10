@@ -5,7 +5,7 @@
     &:before {
         content: url(../img/decor/bars-and-berries.png);
         position: absolute;
-        bottom: -80px;
+        bottom: rem(-80px);
         left: 0;
     }
 }

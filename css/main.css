@@ -1,12 +1,25 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css";
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+html {
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 16px;
+  }
+}
+
 html,
 body {
   height: 100%;
 }
 
 body {
-  font-size: 18px;
   font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
   -webkint-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -17,13 +30,13 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 960px;
   min-height: 100%;
   overflow: hidden;
 }
 
 .container {
-  width: 940px;
+  width: 95%;
+  max-width: 940px;
   margin: 0 auto;
   position: relative;
 }
@@ -77,19 +90,29 @@ img {
   background: url("../img/decor/big-leaf.png") right bottom no-repeat;
   background-color: #61c4d9;
   height: 100vh;
-  min-height: 650px;
+  min-height: 36.1111111111rem;
   color: #fff;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .hero {
+    background-position: right bottom 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero:before, .hero:after {
+    display: none;
+  }
+}
 .hero:before {
   position: absolute;
-  bottom: -40px;
+  bottom: -2.2222222222rem;
   left: 2%;
   content: url(../img/decor/corner-leaf.png);
 }
 .hero:after {
   position: absolute;
-  bottom: -37px;
+  bottom: -2.0555555556rem;
   right: 0;
   content: url(../img/decor/berries.png);
 }
@@ -97,28 +120,58 @@ img {
 .hero__title-section {
   width: 46%;
 }
+@media screen and (max-width: 768px) {
+  .hero__title-section {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .hero__title-section:before {
+    content: url("../img/decor/hero-bars.png");
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero__icons-section {
+    display: none;
+  }
+}
 
 .hero__container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 24px 0 45px 0;
+  padding: 1.3333333333rem 0 2.5rem 0;
   background: url("../img/decor/chocolates.png") right center/50% auto no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .hero__container {
+    background: none;
+  }
 }
 
 .hero__main-title {
-  font-size: 48px;
+  font-size: 2.6666666667rem;
   line-height: 1.23;
   font-weight: bold;
-  margin-bottom: 18px;
+  margin-bottom: 1rem;
   text-transform: uppercase;
 }
 
 .hero__title-desc {
-  font-size: 21px;
-  margin-bottom: 52px;
+  font-size: 1.1666666667rem;
+  margin-bottom: 2.8888888889rem;
   padding-right: 15%;
+}
+@media screen and (max-width: 768px) {
+  .hero__title-desc {
+    padding: 0 25%;
+  }
 }
 
 .header {
@@ -127,13 +180,25 @@ img {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 768px) {
+  .phone-number.header__phone-number {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
 .menu__list {
   display: flex;
   align-items: center;
 }
 
 .menu__item {
-  margin-right: 28px;
+  margin-right: 1.5555555556rem;
 }
 .menu__item:last-child {
   margin-right: 0;
@@ -144,16 +209,16 @@ img {
 }
 
 .phone-number {
-  font-size: 24px;
+  font-size: 1.3333333333rem;
   text-decoration: none;
   display: flex;
   align-items: center;
 }
 
 .phone-number__icon-elem {
-  width: 15px;
-  height: 15px;
-  margin-right: 3px;
+  width: 0.8333333333rem;
+  height: 0.8333333333rem;
+  margin-right: 0.1666666667rem;
 }
 
 .features {
@@ -161,7 +226,7 @@ img {
 }
 
 .features__item {
-  margin-right: 53px;
+  margin-right: 2.9444444444rem;
 }
 .features__item:last-child {
   margin-right: 0;
@@ -172,22 +237,22 @@ img {
 }
 
 .feature__icon {
-  width: 45px;
-  margin-right: 7px;
+  width: 2.5rem;
+  margin-right: 0.3888888889rem;
 }
 
 .feature__text {
-  font-size: 15px;
+  font-size: 0.8333333333rem;
   line-height: 1.3;
-  max-width: 70px;
+  max-width: 3.8888888889rem;
 }
 
 .btn {
-  font-size: 16px;
+  font-size: 0.8888888889rem;
   font-weight: bold;
-  padding: 22px 42px;
+  padding: 1.2222222222rem 2.3333333333rem;
   text-transform: uppercase;
-  border-radius: 100px;
+  border-radius: 5.5555555556rem;
   line-height: 1;
   text-decoration: none;
   text-align: center;
@@ -213,7 +278,7 @@ img {
   background: transparent;
   color: #000;
   text-transform: none;
-  padding: 22px 20px;
+  padding: 1.2222222222rem 1.1111111111rem;
 }
 .btn--theme--transparent:hover {
   color: #0b4d3c;
@@ -221,7 +286,7 @@ img {
 
 .section {
   height: 100vh;
-  min-height: 650px;
+  min-height: 36.1111111111rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -231,13 +296,13 @@ img {
 }
 .section--font-color--green .section__title {
   color: inherit;
-  margin-bottom: 62px;
+  margin-bottom: 3.4444444444rem;
 }
 
 .section__title {
-  font-size: 48px;
+  font-size: 2.6666666667rem;
   font-weight: bold;
-  margin-bottom: 60px;
+  margin-bottom: 3.3333333333rem;
   text-align: center;
   text-transform: uppercase;
   color: #000;
@@ -248,11 +313,11 @@ img {
 }
 
 .headline__title {
-  margin-bottom: 25px;
+  margin-bottom: 1.3888888889rem;
 }
 
 .headline__subtitle {
-  margin-bottom: 50px;
+  margin-bottom: 2.7777777778rem;
   padding: 0 26%;
 }
 
@@ -268,7 +333,7 @@ img {
 .benefits__item:before {
   content: url(../img/decor/separator.png);
   position: absolute;
-  top: 30px;
+  top: 1.6666666667rem;
   right: 0;
   transform: translateX(50%);
 }
@@ -288,8 +353,8 @@ img {
 
 .benefit__image-wrapper {
   display: inline-block;
-  width: 126px;
-  height: 126px;
+  width: 7rem;
+  height: 7rem;
   position: relative;
   border-radius: 50%;
   overflow: hidden;
@@ -297,8 +362,8 @@ img {
 }
 
 .benefit__icon {
-  width: 75px;
-  height: 69px;
+  width: 4.1666666667rem;
+  height: 3.8333333333rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -306,14 +371,14 @@ img {
 }
 
 .benefit__title {
-  font-size: 27px;
+  font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 1.1111111111rem;
   color: #292929;
 }
 
 .benefit__image {
-  margin-bottom: 20px;
+  margin-bottom: 1.1111111111rem;
 }
 
 .benefits-section {
@@ -323,7 +388,7 @@ img {
 .benefits-section:before {
   content: url(../img/decor/bars-and-berries.png);
   position: absolute;
-  bottom: -80px;
+  bottom: -4.4444444444rem;
   left: 0;
 }
 
@@ -333,49 +398,49 @@ img {
 .reviews:before {
   position: absolute;
   right: 0;
-  top: 22px;
+  top: 1.2222222222rem;
   content: url(../img/decor/side-leaf-1.png);
 }
 
 .reviews-section {
   position: relative;
-  background: url(../img/decor/berries-3.png) right 2% top 40px no-repeat;
+  background: url(../img/decor/berries-3.png) right 2% top 2.2222222222rem no-repeat;
 }
 .reviews-section:before {
   position: absolute;
   left: 0;
-  bottom: -150px;
+  bottom: -8.3333333333rem;
   content: url(../img/decor/side-leaf-2.png);
 }
 .reviews-section:after {
   position: absolute;
   left: 0;
-  bottom: -87px;
+  bottom: -4.8333333333rem;
   content: url(../img/decor/berries-4.png);
 }
 
 .reviews-section__title {
-  margin-bottom: 33px;
+  margin-bottom: 1.8333333333rem;
 }
 
 .reviews__display {
   background: #f8faf9;
-  padding: 40px;
-  margin-bottom: 15px;
+  padding: 2.2222222222rem;
+  margin-bottom: 0.8333333333rem;
   overflow: hidden;
   position: relative;
 }
 .reviews__display:before {
   content: "";
   display: block;
-  width: 90px;
-  height: 90px;
+  width: 5rem;
+  height: 5rem;
   background: #fff;
   border-radius: 50%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: -65px;
+  top: -3.6111111111rem;
 }
 
 .reviews__display-inner {
@@ -383,8 +448,8 @@ img {
 }
 
 .reviews__avatar {
-  width: 254px;
-  height: 265px;
+  width: 14.1111111111rem;
+  height: 14.7222222222rem;
 }
 
 .reviews__avatar-img {
@@ -395,25 +460,25 @@ img {
 
 .reviews__content {
   flex: 1;
-  margin-left: 38px;
+  margin-left: 2.1111111111rem;
 }
 
 .reviews__title {
-  font-size: 27px;
+  font-size: 1.5rem;
   font-weight: bold;
-  margin: 29px 0 13px 0;
+  margin: 1.6111111111rem 0 0.7222222222rem 0;
   color: black;
 }
 
 .reviews__text {
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 1.25;
-  margin-bottom: 29px;
-  padding-right: 123px;
+  margin-bottom: 1.6111111111rem;
+  padding-right: 6.8333333333rem;
 }
 
 .reviews__author {
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: bold;
   color: black;
 }
@@ -427,9 +492,9 @@ img {
 }
 
 .interactive-avatar {
-  width: 80px;
-  height: 80px;
-  border: 6px solid transparent;
+  width: 4.4444444444rem;
+  height: 4.4444444444rem;
+  border: 0.3333333333rem solid transparent;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
@@ -463,14 +528,14 @@ img {
 .order-section:before {
   position: absolute;
   content: url(../img/decor/berries-1.png);
-  left: 51px;
-  bottom: 69px;
+  left: 2.8333333333rem;
+  bottom: 3.8333333333rem;
 }
 .order-section:after {
   position: absolute;
   content: url(../img/decor/leaf.png);
-  right: 10px;
-  bottom: 58px;
+  right: 0.5555555556rem;
+  bottom: 3.2222222222rem;
 }
 
 .form {
@@ -479,7 +544,7 @@ img {
 
 .form__col {
   flex: 1;
-  margin-right: 25px;
+  margin-right: 1.3888888889rem;
 }
 .form__col:last-child {
   margin-right: 0;
@@ -487,18 +552,18 @@ img {
 
 .form__row {
   display: flex;
-  margin-bottom: 15px;
+  margin-bottom: 0.8333333333rem;
 }
 .form__row--margin {
   margin-bottom: 0;
 }
 .form__row--margin-add {
-  margin-bottom: 35px;
+  margin-bottom: 1.9444444444rem;
 }
 
 .form__block {
   flex: 1;
-  margin-right: 15px;
+  margin-right: 0.8333333333rem;
 }
 .form__block:last-child {
   margin-right: 0;
@@ -506,12 +571,12 @@ img {
 
 .form__input {
   width: 100%;
-  padding: 16px 11px;
-  border: solid 3px transparent;
-  border-radius: 5px;
+  padding: 0.8888888889rem 0.6111111111rem;
+  border: solid 0.1666666667rem transparent;
+  border-radius: 0.2777777778rem;
 }
 .form__input--textarea {
-  height: 153px;
+  height: 8.5rem;
   resize: none;
 }
 .form__input:focus {
@@ -522,11 +587,11 @@ img {
 .form__controls {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 17px;
+  margin-bottom: 0.9444444444rem;
 }
 
 .form__btns {
-  margin-top: 44px;
+  margin-top: 2.4444444444rem;
 }
 
 .radio {
@@ -551,16 +616,16 @@ img {
 }
 
 .radio__visible {
-  width: 26px;
-  height: 26px;
+  width: 1.4444444444rem;
+  height: 1.4444444444rem;
   position: relative;
   border-radius: 50%;
   background: #fff;
 }
 .radio__visible:before {
   content: "";
-  width: 14px;
-  height: 14px;
+  width: 0.7777777778rem;
+  height: 0.7777777778rem;
   background: #365a49;
   border-radius: 50%;
   position: absolute;
@@ -571,7 +636,7 @@ img {
 }
 
 .radio__title {
-  padding: 0 17px;
+  padding: 0 0.9444444444rem;
 }
 
 .fixed-menu {
@@ -582,7 +647,7 @@ img {
 }
 
 .fixed-menu__item {
-  margin-bottom: 5px;
+  margin-bottom: 0.2777777778rem;
 }
 .fixed-menu__item:last-child {
   margin-bottom: 0;
@@ -592,18 +657,18 @@ img {
 }
 
 .fixed-menu__link {
-  width: 16px;
-  height: 16px;
+  width: 0.8888888889rem;
+  height: 0.8888888889rem;
   border-radius: 50%;
-  border: 1px solid transparent;
+  border: 0.0555555556rem solid transparent;
   display: block;
   position: relative;
 }
 .fixed-menu__link:before {
   content: "";
   display: block;
-  width: 6px;
-  height: 6px;
+  width: 0.3333333333rem;
+  height: 0.3333333333rem;
   border-radius: 50%;
   background: #fff;
   position: absolute;

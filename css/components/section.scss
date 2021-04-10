@@ -1,6 +1,6 @@
 .section {
     height: 100vh;
-    min-height: 650px;
+    min-height: rem(650px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,15 +10,15 @@
 
         .section__title {
             color: inherit;
-            margin-bottom: 62px;
+            margin-bottom: rem(62px);
         }
     }
 }
 
 .section__title {
-    font-size: 48px;
+    font-size: rem(48px);
     font-weight: bold;
-    margin-bottom: 60px;
+    margin-bottom: rem(60px);
     text-align: center;
     text-transform: uppercase;
     color: #000;

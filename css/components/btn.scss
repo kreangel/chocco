@@ -1,9 +1,9 @@
 .btn {
-    font-size: 16px;
+    font-size: rem(16px);
     font-weight: bold;
-    padding: 22px 42px;
+    padding: rem(22px) rem(42px);
     text-transform: uppercase;
-    border-radius: 100px;
+    border-radius: rem(100px);
     line-height: 1;
     text-decoration: none;
     text-align: center;
@@ -33,7 +33,7 @@
         background: transparent;
         color: #000;
         text-transform: none;
-        padding: 22px 20px;
+        padding: rem(22px) rem(20px);
         
         &:hover {
             color: $darkGreen;
