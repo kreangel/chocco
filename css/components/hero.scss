@@ -7,7 +7,7 @@
     position: relative;
 
     @include tablets {
-        background-position: right bottom 80%;
+        background-position: right bottom 75%;
     }
 
     &:before, &:after {
@@ -45,6 +45,7 @@
 
         &:before {
             content: url("../img/decor/hero-bars.png");
+            margin-bottom: rem(17px);
         }
     }
 }
@@ -69,16 +70,16 @@
 }
 
 .hero__main-title {
-    font-size: rem(48px);
+    font-size: rem(50px);
     line-height: 1.23;
     font-weight: bold;
-    margin-bottom: rem(18px);
+    margin-bottom: rem(10px);
     text-transform: uppercase;
 }
 
 .hero__title-desc {
-    font-size: rem(21px);
-    margin-bottom: rem(52px);
+    font-size: rem(22px);
+    margin-bottom: rem(25px);
     padding-right: 15%;
 
     @include tablets {

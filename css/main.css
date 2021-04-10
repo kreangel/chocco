@@ -96,7 +96,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .hero {
-    background-position: right bottom 80%;
+    background-position: right bottom 75%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -132,6 +132,7 @@ img {
   }
   .hero__title-section:before {
     content: url("../img/decor/hero-bars.png");
+    margin-bottom: 0.9444444444rem;
   }
 }
 
@@ -156,16 +157,16 @@ img {
 }
 
 .hero__main-title {
-  font-size: 2.6666666667rem;
+  font-size: 2.7777777778rem;
   line-height: 1.23;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5555555556rem;
   text-transform: uppercase;
 }
 
 .hero__title-desc {
-  font-size: 1.1666666667rem;
-  margin-bottom: 2.8888888889rem;
+  font-size: 1.2222222222rem;
+  margin-bottom: 1.3888888889rem;
   padding-right: 15%;
 }
 @media screen and (max-width: 768px) {
@@ -178,6 +179,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 @media screen and (max-width: 768px) {
@@ -186,6 +188,10 @@ img {
   }
 }
 
+.menu {
+  padding-top: 7px;
+  margin: 0 30px;
+}
 @media screen and (max-width: 768px) {
   .menu {
     display: none;
@@ -194,11 +200,14 @@ img {
 
 .menu__list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
 }
 
 .menu__item {
   margin-right: 1.5555555556rem;
+  margin-bottom: 5px;
 }
 .menu__item:last-child {
   margin-right: 0;
@@ -206,13 +215,20 @@ img {
 
 .menu__link {
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .phone-number {
   font-size: 1.3333333333rem;
+  padding-top: 4px;
   text-decoration: none;
   display: flex;
   align-items: center;
+  white-space: nowrap;
+}
+
+.phone-number__icon {
+  flex-shrink: 0;
 }
 
 .phone-number__icon-elem {
@@ -250,7 +266,7 @@ img {
 .btn {
   font-size: 0.8888888889rem;
   font-weight: bold;
-  padding: 1.2222222222rem 2.3333333333rem;
+  padding: 1.3333333333rem 2.5555555556rem;
   text-transform: uppercase;
   border-radius: 5.5555555556rem;
   line-height: 1;
@@ -318,7 +334,7 @@ img {
 
 .headline__subtitle {
   margin-bottom: 2.7777777778rem;
-  padding: 0 26%;
+  padding: 0 24%;
 }
 
 .benefits {
@@ -385,6 +401,11 @@ img {
   position: relative;
   background: url(../img/decor/side-leaf.png) left top 57% no-repeat;
 }
+@media screen and (max-width: 768px) {
+  .benefits-section {
+    background-position: left -2% top 15%;
+  }
+}
 .benefits-section:before {
   content: url(../img/decor/bars-and-berries.png);
   position: absolute;
@@ -395,7 +416,7 @@ img {
 .reviews {
   position: relative;
 }
-.reviews:before {
+.reviews:after {
   position: absolute;
   right: 0;
   top: 1.2222222222rem;
@@ -446,10 +467,24 @@ img {
 .reviews__display-inner {
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .reviews__display-inner {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
 
 .reviews__avatar {
   width: 14.1111111111rem;
   height: 14.7222222222rem;
+}
+@media screen and (max-width: 768px) {
+  .reviews__avatar {
+    margin-top: 1.3888888889rem;
+    width: 7.5555555556rem;
+    height: 7.6666666667rem;
+  }
 }
 
 .reviews__avatar-img {
@@ -461,6 +496,11 @@ img {
 .reviews__content {
   flex: 1;
   margin-left: 2.1111111111rem;
+}
+@media screen and (max-width: 768px) {
+  .reviews__content {
+    margin-left: 0;
+  }
 }
 
 .reviews__title {
@@ -475,6 +515,11 @@ img {
   line-height: 1.25;
   margin-bottom: 1.6111111111rem;
   padding-right: 6.8333333333rem;
+}
+@media screen and (max-width: 768px) {
+  .reviews__text {
+    padding-right: 0;
+  }
 }
 
 .reviews__author {
@@ -492,9 +537,9 @@ img {
 }
 
 .interactive-avatar {
-  width: 4.4444444444rem;
-  height: 4.4444444444rem;
-  border: 0.3333333333rem solid transparent;
+  width: 80px;
+  height: 80px;
+  border: 6px solid transparent;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
@@ -675,4 +720,24 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.hamburger {
+  width: 24px;
+  height: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: inline-flex;
+  }
+}
+
+.hamburger__plank {
+  display: block;
+  background: #fff;
+  height: 4px;
+  border-radius: 5px;
 }

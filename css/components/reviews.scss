@@ -1,11 +1,13 @@
 .reviews {
     position: relative;
 
-    &:before {
+    &:after {
         position: absolute;
         right: 0;
         top: rem(22px);
         content: url(../img/decor/side-leaf-1.png)
+
+        
     }
 }
 
@@ -55,11 +57,23 @@
 
 .reviews__display-inner {
     display: flex;
+
+    @include tablets {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
 }
 
 .reviews__avatar {
     width: rem(254px);
     height: rem(265px);
+
+    @include tablets {
+        margin-top: rem(25px);
+        width: rem(136px);
+        height: rem(138px);
+    }
 }
 
 .reviews__avatar-img {
@@ -71,6 +85,10 @@
 .reviews__content {
     flex: 1;
     margin-left: rem(38px);
+
+    @include tablets {
+        margin-left: 0;
+    }
 }
 
 .reviews__title {
@@ -85,6 +103,10 @@
     line-height: 1.25;
     margin-bottom: rem(29px);
     padding-right: rem(123px);
+
+    @include tablets {
+        padding-right: 0;
+    }
 }
 
 .reviews__author {
