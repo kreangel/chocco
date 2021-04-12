@@ -50,10 +50,17 @@
 
 .phone-number__icon {
     flex-shrink: 0;
+    fill: white;
 }
 
 .phone-number__icon-elem {
     width: rem(15px);
     height: rem(15px);
     margin-right: rem(3px);
+}
+
+.logo {
+    width: 82px;
+    height: 38px;
+    fill: white;
 }

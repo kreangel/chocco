@@ -5,9 +5,7 @@
         position: absolute;
         right: 0;
         top: rem(22px);
-        content: url(../img/decor/side-leaf-1.png)
-
-        
+        content: url(../img/decor/side-leaf-1.png);
     }
 }
 
@@ -68,6 +66,10 @@
 .reviews__avatar {
     width: rem(254px);
     height: rem(265px);
+        
+    @include phones {
+        z-index: 10;
+    }
 
     @include tablets {
         margin-top: rem(25px);

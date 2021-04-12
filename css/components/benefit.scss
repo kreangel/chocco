@@ -1,5 +1,13 @@
 .benefit {
     text-align: center;
+
+    @include phones {
+        display: flex;
+        text-align: left;
+        margin-bottom: rem(20px);
+        padding-right: rem(48px);
+        align-items: center;
+    }
 }
 
 .benefit__image-wrapper {
@@ -15,6 +23,7 @@
 .benefit__icon {
     width: rem(75px);
     height: rem(69px);
+    fill: #292929;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -30,4 +39,9 @@
 
 .benefit__image {
     margin-bottom: rem(20px);
+
+    @include phones {
+        margin-bottom: 0;
+        margin-right: rem(20px);
+    }
 }

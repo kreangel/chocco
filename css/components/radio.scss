@@ -4,6 +4,10 @@
     user-select: none;
     align-items: center;
 
+    @include phones {
+        margin-bottom: rem(17px);
+    }
+
     &--checkbox {
         .radio__visible {
             border-radius: 0;

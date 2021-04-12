@@ -8,10 +8,21 @@
         left: rem(51px);
         bottom: rem(69px);
     }
+
     &:after {
         position: absolute;
         content: url(../img/decor/leaf.png);
         right: rem(10px);
         bottom: rem(58px);
+    }
+
+    @include tablets {
+        &:before {
+            display: none;
+        }
+        
+        &:after {
+            display: none;
+        }
     }
 }
