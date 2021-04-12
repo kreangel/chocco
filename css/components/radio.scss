@@ -3,10 +3,7 @@
     cursor: pointer;
     user-select: none;
     align-items: center;
-
-    @include phones {
-        margin-bottom: rem(17px);
-    }
+    margin-bottom: rem(17px);
 
     &--checkbox {
         .radio__visible {

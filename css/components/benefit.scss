@@ -7,6 +7,10 @@
         margin-bottom: rem(20px);
         padding-right: rem(48px);
         align-items: center;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
 

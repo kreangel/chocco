@@ -4,8 +4,8 @@
     @include tablets {
         flex-direction: column;
         padding: 0 19%;
-    
     }
+    
     @include phones {
         padding: 0;
     }
@@ -21,31 +21,24 @@
 
     @include tablets {
         margin-right: 0;
+        margin-bottom: rem(22px);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
 
 .form__row {
     display: flex;
     margin-bottom: rem(15px);
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
 
     @include tablets {
         margin-bottom: rem(20px);
-    }
-
-    &--margin {
-        margin-bottom: 0;
-
-        @include tablets {
-            margin-bottom: rem(22px);
-        }
-    }
-
-    &--margin-add {
-        margin-bottom: rem(35px);
-
-        @include tablets {
-            margin-bottom: rem(22px);
-        }
     }
 }
 
@@ -86,11 +79,6 @@
 .form__controls {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: rem(17px);
-
-    @include tablets {
-        margin-bottom: rem(26px);
-    }
 
     @include phones {
         justify-content: center;
