@@ -890,3 +890,156 @@ img {
   height: 4px;
   border-radius: 5px;
 }
+
+.products-section {
+  background-color: #F8FAF9;
+}
+
+.poducts-slider {
+  position: relative;
+}
+
+.poducts-slider__arrows--direction--prev {
+  position: absolute;
+  left: -2%;
+  bottom: 50%;
+}
+.poducts-slider__arrows--direction--next {
+  position: absolute;
+  right: -2%;
+  bottom: 50%;
+}
+
+.product__container {
+  display: flex;
+}
+
+.product__col {
+  flex: 1;
+}
+.product__col--container {
+  padding: 0rem 0.5555555556rem 0rem 3.3333333333rem;
+}
+
+.product__values {
+  display: flex;
+}
+
+.product__ingredients {
+  width: 5.5555555556rem;
+  height: 5.5555555556rem;
+  background: #86c3d7;
+  border-radius: 0.2777777778rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.structure {
+  margin-top: 0.8333333333rem;
+  width: 2.5555555556rem;
+  height: 2.5555555556rem;
+}
+
+.structure__text {
+  margin-bottom: 0.8333333333rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+}
+
+.product__title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 1.2777777778rem;
+  color: #292929;
+}
+
+.product__text {
+  margin-bottom: 1.3888888889rem;
+}
+
+.product__values--order {
+  display: flex;
+  margin-top: 1.3888888889rem;
+}
+.product__values--selary {
+  font-size: 3.3333333333rem;
+  margin-right: 1.6666666667rem;
+  color: #292929;
+}
+
+.product__values--col {
+  margin-right: 2.2222222222rem;
+}
+
+.product__values--bold {
+  color: #292929;
+  font-weight: bold;
+}
+
+.arrows {
+  width: 0.7777777778rem;
+  height: 1.5rem;
+}
+
+.dropdown {
+  display: flex;
+  position: relative;
+}
+
+.dropdown:hover .dropdown__menu {
+  display: block;
+}
+
+.dropdown__menu {
+  border-radius: 0.2777777778rem;
+  background: rgba(255, 255, 255, 0.8);
+  display: none;
+  left: 5.5555555556rem;
+  position: absolute;
+}
+.dropdown__menu:before {
+  content: "";
+  display: block;
+  height: 11.1111111111rem;
+  width: 5.5555555556rem;
+  left: -5.5555555556rem;
+  top: 5.5555555556rem;
+  position: absolute;
+}
+
+.dropdown__list {
+  display: flex;
+  padding: 1.1111111111rem;
+}
+
+.dropdown__item {
+  margin-right: 1.1111111111rem;
+}
+
+.dropdown__svg {
+  width: 2.2222222222rem;
+  height: 2.2222222222rem;
+}
+
+.dropdown__item--img:last-child {
+  margin-bottom: 0;
+}
+
+.dropdown__item--text {
+  margin-bottom: 1.3888888889rem;
+}
+.dropdown__item--text:last-child {
+  margin-bottom: 0;
+}
+
+.dropdown__item--mass {
+  text-align: right;
+  margin-bottom: 1.3888888889rem;
+}
+.dropdown__item--mass:last-child {
+  margin-bottom: 0;
+}
