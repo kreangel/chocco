@@ -867,7 +867,7 @@ img {
   transform: translate(-50%, -50%);
 }
 
-.hamburger {
+.burger {
   position: fixed;
   top: 3%;
   right: 4%;
@@ -877,22 +877,88 @@ img {
   flex-direction: column;
   justify-content: space-between;
   display: none;
+  cursor: pointer;
+}
+.burger--active .burger__line:nth-child(1) {
+  opacity: 0;
+  transition: all 0.4s;
+}
+.burger--active .burger__line:nth-child(2) {
+  transform: rotate(45deg);
+  transition: all 0.4s;
+}
+.burger--active .burger__line:nth-child(3) {
+  transform: rotate(-45deg) translateY(-6px) translateX(5px);
+  transition: all 0.4s;
 }
 @media screen and (max-width: 768px) {
-  .hamburger {
+  .burger {
     display: inline-flex;
   }
 }
 
-.hamburger__plank {
+.burger__line {
   display: block;
   background: #fff;
   height: 4px;
   border-radius: 5px;
 }
 
+.overlay {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+}
+.overlay--active {
+  left: 0;
+  opacity: 1;
+}
+
+.b-menu__item {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.b-menu__item:after {
+  content: "";
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+.b-menu__item:last-child {
+  margin-bottom: 0;
+}
+.b-menu__item:last-child:after {
+  display: none;
+}
+.b-menu__link:hover {
+  opacity: 0.7;
+}
+
 .products-section {
+  position: relative;
   background-color: #F8FAF9;
+}
+.products-section:after {
+  position: absolute;
+  bottom: -10rem;
+  right: 0;
+  content: url(../img/decor/berries-leaf.png);
 }
 
 .poducts-slider {
@@ -913,6 +979,14 @@ img {
 .product__container {
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .product__container {
+    flex-direction: column;
+    text-align: center;
+    padding: 0rem 2.7777777778rem;
+    align-items: center;
+  }
+}
 
 .product__col {
   flex: 1;
@@ -920,9 +994,10 @@ img {
 .product__col--container {
   padding: 0rem 0.5555555556rem 0rem 3.3333333333rem;
 }
-
-.product__values {
-  display: flex;
+@media screen and (max-width: 768px) {
+  .product__col--container {
+    padding: 0;
+  }
 }
 
 .product__ingredients {
@@ -934,6 +1009,11 @@ img {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .product__ingredients {
+    display: none;
+  }
 }
 
 .structure {
@@ -961,18 +1041,35 @@ img {
   margin-bottom: 1.3888888889rem;
 }
 
+.product__values {
+  display: flex;
+}
 .product__values--order {
   display: flex;
   margin-top: 1.3888888889rem;
+}
+@media screen and (max-width: 768px) {
+  .product__values--order {
+    justify-content: center;
+  }
 }
 .product__values--selary {
   font-size: 3.3333333333rem;
   margin-right: 1.6666666667rem;
   color: #292929;
 }
+@media screen and (max-width: 768px) {
+  .product__values {
+    text-align: left;
+    justify-content: center;
+  }
+}
 
 .product__values--col {
   margin-right: 2.2222222222rem;
+}
+.product__values--col:last-child {
+  margin-right: 0rem;
 }
 
 .product__values--bold {
