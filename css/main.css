@@ -926,25 +926,18 @@ img {
 }
 
 .b-menu__item {
-  margin-bottom: 20px;
+  margin-bottom: 1.3888888889rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.b-menu__item:after {
-  content: "";
-  display: inline-block;
-  height: 5px;
-  width: 5px;
-  background-color: #fff;
-  border-radius: 50%;
-  margin-top: 10px;
-}
 .b-menu__item:last-child {
   margin-bottom: 0;
 }
-.b-menu__item:last-child:after {
-  display: none;
+.b-menu__link {
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
 }
 .b-menu__link:hover {
   opacity: 0.7;
@@ -976,6 +969,11 @@ img {
   bottom: 50%;
 }
 
+.arrows {
+  width: 1.3333333333rem;
+  height: 2.2222222222rem;
+}
+
 .product__container {
   display: flex;
 }
@@ -991,11 +989,11 @@ img {
 .product__col {
   flex: 1;
 }
-.product__col--container {
+.product__col-container {
   padding: 0rem 0.5555555556rem 0rem 3.3333333333rem;
 }
 @media screen and (max-width: 768px) {
-  .product__col--container {
+  .product__col-container {
     padding: 0;
   }
 }
@@ -1016,19 +1014,6 @@ img {
   }
 }
 
-.structure {
-  margin-top: 0.8333333333rem;
-  width: 2.5555555556rem;
-  height: 2.5555555556rem;
-}
-
-.structure__text {
-  margin-bottom: 0.8333333333rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #fff;
-}
-
 .product__title {
   font-size: 2rem;
   text-transform: uppercase;
@@ -1044,16 +1029,16 @@ img {
 .product__values {
   display: flex;
 }
-.product__values--order {
+.product__values-order {
   display: flex;
   margin-top: 1.3888888889rem;
 }
 @media screen and (max-width: 768px) {
-  .product__values--order {
+  .product__values-order {
     justify-content: center;
   }
 }
-.product__values--selary {
+.product__values-selary {
   font-size: 3.3333333333rem;
   margin-right: 1.6666666667rem;
   color: #292929;
@@ -1077,9 +1062,17 @@ img {
   font-weight: bold;
 }
 
-.arrows {
-  width: 0.7777777778rem;
-  height: 1.5rem;
+.structure {
+  margin-top: 0.8333333333rem;
+  width: 2.5555555556rem;
+  height: 2.5555555556rem;
+}
+
+.structure__text {
+  margin-bottom: 0.8333333333rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
 }
 
 .dropdown {

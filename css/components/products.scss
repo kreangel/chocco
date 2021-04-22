@@ -29,6 +29,11 @@
     }
 }
 
+.arrows {
+    width: rem(24px);
+    height: rem(40px);
+}
+
 .product__container {
     display: flex;
 
@@ -43,7 +48,7 @@
 .product__col {
     flex: 1;
     
-    &--container {
+    &-container {
        padding: rem(0px) rem(10px) rem(0px) rem(60px);
         
         @include tablets {
@@ -51,8 +56,6 @@
         }
     }
 }
-
-
 
 .product__ingredients {
     width: rem(100px);
@@ -67,19 +70,6 @@
     @include tablets {
         display: none;
     }
-}
-
-.structure {
-    margin-top: rem(15px);
-    width: rem(46px);
-    height: rem(46px);
-}
-
-.structure__text {
-    margin-bottom: rem(15px);
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #fff;
 }
 
 .product__title {
@@ -97,7 +87,7 @@
 .product__values {
     display: flex;
 
-    &--order {
+    &-order {
     display: flex;
     margin-top: rem(25px);
 
@@ -106,7 +96,7 @@
         }
     }
 
-    &--selary {
+    &-selary {
         font-size: rem(60px);
         margin-right: rem(30px);
         color: #292929;
@@ -131,7 +121,15 @@
     font-weight: bold;
 }
 
-.arrows {
-    width: rem(14px);
-    height: rem(27px);
+.structure {
+    margin-top: rem(15px);
+    width: rem(46px);
+    height: rem(46px);
+}
+
+.structure__text {
+    margin-bottom: rem(15px);
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
 }

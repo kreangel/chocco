@@ -46,11 +46,11 @@
     </symbol>
 
     <symbol id="left">
-        <path d="M14 28L1.91422 15.9142C1.13317 15.1332 1.13317 13.8668 1.91421 13.0858L14 1" stroke="black" stroke-width="2" stroke-linecap="round"/>
+        <path d="M19 34L6.91422 21.9142C6.13317 21.1332 6.13317 19.8668 6.91421 19.0858L19 7" stroke="black" stroke-width="2" stroke-linecap="round" fill="none"/>
     </symbol>
 
     <symbol id="right">
-        <path d="M1 1L13.0858 13.0858C13.8668 13.8668 13.8668 15.1332 13.0858 15.9142L1 28" stroke="black" stroke-width="2" stroke-linecap="round"/>
+        <path d="M5 6L17.0858 18.0858C17.8668 18.8668 17.8668 20.1332 17.0858 20.9142L5 33" stroke="black" stroke-width="2" stroke-linecap="round" fill="none"/>
     </symbol>
 
 
