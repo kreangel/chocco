@@ -13,7 +13,8 @@
 
 .menu {
     padding-top: 7px;
-    margin: 0 30px;
+    margin: rem(0px) rem(25px);
+
     @include tablets {
         display: none;
     }
