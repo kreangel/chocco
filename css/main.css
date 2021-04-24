@@ -218,6 +218,11 @@ img {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .menu__list {
+    display: none;
+  }
+}
 
 .menu__item {
   margin-right: 1.5555555556rem;
