@@ -1,0 +1,65 @@
+.products-menu-section {
+    background: url(../img/decor/Slider.jpg) center center/cover no-repeat;
+    position: relative;
+    color: #fff;
+}
+
+.products-menu-section__title {
+    color: #fff;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+
+.products-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+
+    &__item {
+        display: flex;
+    }
+
+    &__title {
+        position: relative;
+        width: rem(100px);
+    }
+
+    &__image {
+        height: 100vh;
+    }
+
+    &__text {
+        transform: rotate(-90deg) translateX(50%) translateY(-258%) ;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 58px;
+        white-space: nowrap;
+        position: absolute;
+        bottom: 0;
+        min-width: rem(400px);
+    }
+
+    &__content {
+        background: rgba(47, 50, 52, 0.9);
+        width: 0;
+        position: relative;
+        overflow: hidden;
+        transition: width .7s;
+    }
+
+    &__container {
+        padding: rem(40px), rem(73px), rem(45px), rem(26px);
+    }
+
+    &__close {
+        position: absolute;
+        top: rem(20px);
+        right: rem(25px);
+        border: none;
+        background: transparent;
+    }
+}
+

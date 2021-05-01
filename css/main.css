@@ -988,7 +988,7 @@ button {
   position: relative;
   background-color: #F8FAF9;
 }
-.products-section:after {
+.products-section:before {
   position: absolute;
   bottom: -10rem;
   right: 0;
@@ -1083,6 +1083,7 @@ button {
   font-size: 3.3333333333rem;
   margin-right: 1.6666666667rem;
   color: #292929;
+  white-space: nowrap;
 }
 @media screen and (max-width: 768px) {
   .product__values {
@@ -1282,4 +1283,62 @@ button {
 .modal__content {
   margin-bottom: 1.3888888889rem;
   color: #000;
+}
+
+.products-menu-section {
+  background: url(../img/decor/Slider.jpg) center center/cover no-repeat;
+  position: relative;
+  color: #fff;
+}
+
+.products-menu-section__title {
+  color: #fff;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+}
+
+.products-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+}
+.products-menu__item {
+  display: flex;
+}
+.products-menu__title {
+  position: relative;
+  width: 5.5555555556rem;
+}
+.products-menu__image {
+  height: 100vh;
+}
+.products-menu__text {
+  transform: rotate(-90deg) translateX(50%) translateY(-258%);
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+  white-space: nowrap;
+  position: absolute;
+  bottom: 0;
+  min-width: 22.2222222222rem;
+}
+.products-menu__content {
+  background: rgba(47, 50, 52, 0.9);
+  width: 0;
+  position: relative;
+  overflow: hidden;
+  transition: width 0.7s;
+}
+.products-menu__container {
+  padding: 2.2222222222rem, 4.0555555556rem, 2.5rem, 1.4444444444rem;
+}
+.products-menu__close {
+  position: absolute;
+  top: 1.1111111111rem;
+  right: 1.3888888889rem;
+  border: none;
+  background: transparent;
 }

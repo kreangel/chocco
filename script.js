@@ -155,3 +155,25 @@ $(".app-submit-btn").click((e) => {
   e.preventDefault();
   $.fancybox.close();
 });
+
+// аккардеон
+
+const mesureWidth = () => {
+  return 500;
+}
+
+const openItimA = itemA => {
+  const hiddenContent = itemA.find(".products-menu__content");
+  const reqWidth = mesureWidth();
+
+  hiddenContent.width(reqWidth);
+}
+
+$(".products-menu__title").on("click", e => {
+  e.preventDefault();
+
+  const $thisA = $(e.currentTarget);
+  const itemA = $thisA.closest(".products-menu__item");
+
+  openItim(itemA);
+});

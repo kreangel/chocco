@@ -2,7 +2,7 @@
     position: relative;
     background-color: #F8FAF9;
 
-    &:after{
+    &:before{
         position: absolute;
         bottom: rem(-180px);
         right: 0;
@@ -88,8 +88,8 @@
     display: flex;
 
     &-order {
-    display: flex;
-    margin-top: rem(25px);
+        display: flex;
+        margin-top: rem(25px);
 
         @include tablets {
             justify-content: center;
@@ -100,6 +100,7 @@
         font-size: rem(60px);
         margin-right: rem(30px);
         color: #292929;
+        white-space: nowrap;
     }
 
     @include tablets {
