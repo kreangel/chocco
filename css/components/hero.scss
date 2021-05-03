@@ -1,7 +1,8 @@
 .hero {
     background: url("../img/decor/big-leaf.png") right bottom no-repeat;
     background-color: $blue;
-    height: 100vh;
+    //height: 100vh;
+    height: 100%;
     min-height: rem(650px);
     color: #fff;
     position: relative;

@@ -9,6 +9,18 @@
     }
 }
 
+.fixed-menu--shadowed {
+    .fixed-menu__item--active {
+        .fixed-menu__link{
+            border-color: $darkGreen;
+        }
+    }
+    .fixed-menu__link::before {
+        background: $darkGreen;
+    }
+}
+
+
 .fixed-menu__item {
     margin-bottom: rem(5px);
 
@@ -16,7 +28,7 @@
         margin-bottom: 0;
     }
 
-    &--active {
+    &--active, &:hover {
         .fixed-menu__link {
             border-color: #fff;
         }

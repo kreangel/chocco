@@ -38,7 +38,6 @@ body {
   height: 100%;
   transition: transform 1s;
   will-change: transform;
-  transform: translateY(-600%);
 }
 
 .container {
@@ -103,7 +102,7 @@ button {
 .hero {
   background: url("../img/decor/big-leaf.png") right bottom no-repeat;
   background-color: #61c4d9;
-  height: 100vh;
+  height: 100%;
   min-height: 36.1111111111rem;
   color: #fff;
   position: relative;
@@ -343,7 +342,7 @@ button {
 }
 
 .section {
-  height: 100vh;
+  height: 100%;
   min-height: 36.1111111111rem;
   display: flex;
   flex-direction: column;
@@ -882,13 +881,20 @@ button {
   }
 }
 
+.fixed-menu--shadowed .fixed-menu__item--active .fixed-menu__link {
+  border-color: #0b4d3c;
+}
+.fixed-menu--shadowed .fixed-menu__link::before {
+  background: #0b4d3c;
+}
+
 .fixed-menu__item {
   margin-bottom: 0.2777777778rem;
 }
 .fixed-menu__item:last-child {
   margin-bottom: 0;
 }
-.fixed-menu__item--active .fixed-menu__link {
+.fixed-menu__item--active .fixed-menu__link, .fixed-menu__item:hover .fixed-menu__link {
   border-color: #fff;
 }
 
@@ -949,27 +955,24 @@ button {
   height: 4px;
   border-radius: 5px;
 }
-
-@media screen and (max-width: 768px) {
-  .overlay {
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    transition: all 0.4s;
-    position: fixed;
-    top: 0;
-    left: 100%;
-    opacity: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 10;
-  }
-  .overlay--active {
-    left: 0;
-    opacity: 1;
-  }
+.overlay {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  transition: all 0.4s;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+}
+.overlay--active {
+  left: 0;
+  opacity: 1;
 }
 
 .overlay--active .menu__list {

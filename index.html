@@ -12,13 +12,13 @@
     <div class="wrapper">
         <div class="maincontent">
 
-            <section datd-section-id="hero" class="hero">
+            <section data-sidemenu-theme="white" data-section-id="hero" class="hero">
                 <div class="container hero__container">
                     <header class="header">
                         <svg class="logo">
                             <use xlink:href="./img/sprite.svg#logo"></use>
                         </svg>
-                        <nav class="menu overlay">
+                        <nav class="menu">
                             <ul class="menu__list">
                                 <li class="menu__item">
                                     <a href="#" data-scroll-to="benefits" class="menu__link">О нас</a>
@@ -36,7 +36,7 @@
                                     <a href="#" data-scroll-to="reviews" class="menu__link">Отзывы</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" data-scroll-to="000" class="menu__link">Как мы работаем</a>
+                                    <a href="#" data-scroll-to="player" class="menu__link">Как мы работаем</a>
                                 </li>
                                 <li class="menu__item">
                                     <a href="#" data-scroll-to="map" class="menu__link">Контакты</a>
@@ -81,7 +81,7 @@
                     </div>
                 </div>
             </section>
-            <section datd-section-id="benefits" class="section benefits-section">
+            <section data-sidemenu-theme="black" data-section-id="benefits" class="section benefits-section">
                 <div class="container">
                     <div class="headline">
                         <h2 class="section__title headline__title">Почему chocco?</h2>
@@ -157,7 +157,7 @@
                     </ul>
                 </div>
             </section>
-            <section datd-section-id="products" class="section products-section">
+            <section data-sidemenu-theme="black" data-section-id="products" class="section products-section">
                 <div class="container">
                     <div class="products-slider">
                         <div class="poducts-slider__arrows">
@@ -260,7 +260,7 @@
                                             </div>
                                             <div class="product__values-order">
                                                 <div class="product__values-selary">140 ₽</div>
-                                                <button class="btn btn--theme--green">заказать</button>
+                                                <button href="#" data-scroll-to="order" class="btn btn--theme--green">заказать</button>
                                             </div>
                                         </div>
                                     </div>
@@ -353,7 +353,7 @@
                                             </div>
                                             <div class="product__values-order">
                                                 <div class="product__values-selary">140 ₽</div>
-                                                <button class="btn btn--theme--green">заказать</button>
+                                                <button href="#" data-scroll-to="order" class="btn btn--theme--green">заказать</button>
                                             </div>
                                         </div>
                                     </div>
@@ -446,7 +446,7 @@
                                             </div>
                                             <div class="product__values-order">
                                                 <div class="product__values-selary">140 ₽</div>
-                                                <button class="btn btn--theme--green">заказать</button>
+                                                <button href="#" data-scroll-to="order" class="btn btn--theme--green">заказать</button>
                                             </div>
                                         </div>
                                     </div>
@@ -457,7 +457,7 @@
                 </div>
 
             </section>
-            <section datd-section-id="team" class="section team-section">
+            <section data-sidemenu-theme="black" data-section-id="team" class="section team-section">
                 <div class="container">
                     <h2 class="section__title team-section__title">Команда</h2>
                     <ul class="team team--desktop">
@@ -563,7 +563,7 @@
                     </ul>
                 </div>
             </section>
-            <section datd-section-id="products-menu" class="section products-menu-section">
+            <section data-sidemenu-theme="white" data-section-id="products-menu" class="section products-menu-section">
                 
                 <h1 class="section__title products-menu-section__title">Меню</h1>
                 <ul class="products-menu">
@@ -630,7 +630,7 @@
                 </ul>
                 
             </section>
-            <section datd-section-id="reviews" class="section reviews-section">
+            <section data-sidemenu-theme="black" data-section-id="reviews" class="section reviews-section">
                 <div class="container">
                     <h2 class="section__title reviews-section__title">Отзывы</h2>
                     <div class="reviews">
@@ -725,7 +725,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section player-section">
+            <section data-sidemenu-theme="black" data-section-id="player" class="section player-section">
                 <div class="container">
                     <h2 class="section__title">Как мы работаем</h2>
                     <div class="player-section__container">
@@ -740,14 +740,15 @@
                                     <button class="player__playback-button"></button>
                                 </div>
                                 <div class="player__duration">
-                                    span.player__duration-comple
+                                    <span class="player__duration-completed">0:00</span>
+                                    <span class="player__duration-estimate">0:00</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section datd-section-id="order" class="section order-section section--font-color--green">
+            <section data-sidemenu-theme="white" data-section-id="order" class="section order-section section--font-color--green">
                 <div class="container">
                     <h2 class="section__title">Закажите доставку</h2>
                     <form action="" class="form">
@@ -822,7 +823,7 @@
                     </form>
                 </div>
             </section>
-            <section datd-section-id="map" class="section map-section">
+            <section data-sidemenu-theme="black" data-section-id="map" class="section map-section">
                 <div id="map" class="map"></div>
                 <footer class="footer">
                     <div class="footer__col">
@@ -870,39 +871,66 @@
                     </div>
                 </footer>
             </section>
-            <div id="modal" class="modal">
-                <div class="modal__container">
-                    <div class="modal__content">
-                        Сообщение отправлено
-                    </div>
-                    <div class="modal__button-container">
-                        <a href="#" class="btn app-submit-btn btn--theme--green">Закрыть</a>
-                    </div>
-                </div>
-            </div>
             
         </div>
     </div>
-
-    <nav class="fixed-menu">
-        <ul class="fixed-menu__list">
-            <li class="fixed-menu__item fixed-menu__item--active"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-            <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
-        </ul>
-    </nav>
+    
+    <div id="modal" class="modal">
+        <div class="modal__container">
+            <div class="modal__content">
+                Сообщение отправлено
+            </div>
+            <div class="modal__button-container">
+                <a href="#" class="btn app-submit-btn btn--theme--green">Закрыть</a>
+            </div>
+        </div>
+    </div>
     <div href="" class="burger">
         <span class="burger__line"></span>
         <span class="burger__line"></span>
         <span class="burger__line"></span>
     </div>
+    <nav class="overlay">
+        <ul class="menu__list">
+            <li class="menu__item menu__link--active">
+                <a href="#" data-scroll-to="benefits" class="menu__link">О нас</a>
+            </li>
+            <li class="menu__item menu__link--active">
+                <a href="#" data-scroll-to="products" class="menu__link">Батончики</a>
+            </li>
+            <li class="menu__item menu__link--active">
+                <a href="#" data-scroll-to="team" class="menu__link">Команда</a>
+            </li>
+            <li class="menu__item menu__link--active">
+                <a href="#" data-scroll-to="products-menu" class="menu__link">Меню</a>
+            </li>
+            <li class="menu__item menu__link--active">
+                <a href="#" data-scroll-to="reviews" class="menu__link">Отзывы</a>
+            </li>
+            <li class="menu__item menu__link--active">
+                <a href="#" data-scroll-to="player" class="menu__link">Как мы работаем</a>
+            </li>
+            <li class="menu__item menu__link--active">
+                <a href="#" data-scroll-to="map" class="menu__link">Контакты</a>
+            </li>
+        </ul>
+    </nav>
+    <nav class="fixed-menu">
+        <ul class="fixed-menu__list">
+            <li data-scroll-to="hero" class="fixed-menu__item fixed-menu__item--active"><a href="" class="fixed-menu__link"></a></li>
+            <li data-scroll-to="benefits" class="fixed-menu__item "><a href="" class="fixed-menu__link"></a></li>
+            <li data-scroll-to="products" class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
+            <li data-scroll-to="team" class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
+            <li data-scroll-to="products-menu" class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
+            <li data-scroll-to="reviews" class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
+            <li data-scroll-to="player" class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
+            <li data-scroll-to="order" class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
+            <li data-scroll-to="map" class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
+        </ul>
+    </nav>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.5/mobile-detect.min.js"></script>
+    <script src="https://github.com/mattbryson/TouchSwipe-Jquery-Plugin/blob/master/jquery.touchSwipe.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
