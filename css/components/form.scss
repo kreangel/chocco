@@ -1,9 +1,43 @@
+.order-section {
+    position: relative;
+    background: url(../img/decor/bg-order.jpg);
+
+    &::before {
+        position: absolute;
+        right: 0;
+        top: -160px;
+        content: url(../img/decor/berries-leaf-2.png)
+    }
+}
+
 .form {
     display: flex;
+
+    &:before {
+        position: absolute;
+        content: url(../img/decor/berries-1.png);
+        left: rem(-25px);
+        bottom: rem(-12px);
+    }
+
+    &:after {
+        position: absolute;
+        content: url(../img/decor/leaf.png);
+        right: rem(-25px);
+        bottom: rem(-30px);
+    }
 
     @include tablets {
         flex-direction: column;
         padding: 0 19%;
+
+        &:before {
+            display: none;
+        }
+        
+        &:after {
+            display: none;
+        }
     }
     
     @include phones {

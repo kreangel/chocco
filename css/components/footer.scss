@@ -1,0 +1,44 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    color: #292929;
+    bottom: 0;
+    padding: rem(24px) rem(86px);
+}
+
+.footer__col {
+    font-size: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.footer__phone-number {
+    color: #497870;
+    fill: #497870;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    
+    
+    &__item {
+        margin-right: 10px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    
+    &__icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.map {
+    flex: 1;
+}
