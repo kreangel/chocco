@@ -51,15 +51,7 @@
     }
 
     &__container {
-        padding: rem(40px), rem(73px), rem(45px), rem(26px);
-    }
-
-    &__close {
-        position: absolute;
-        top: rem(20px);
-        right: rem(25px);
-        border: none;
-        background: transparent;
+        padding: rem(40px) rem(73px) rem(45px) rem(26px);
     }
 }
 

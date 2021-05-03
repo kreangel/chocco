@@ -30,8 +30,14 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
+}
+
+.maincontent {
+  height: 100%;
+  transition: transform 1s;
+  will-change: transform;
 }
 
 .container {
@@ -1333,12 +1339,5 @@ button {
   transition: width 0.7s;
 }
 .products-menu__container {
-  padding: 2.2222222222rem, 4.0555555556rem, 2.5rem, 1.4444444444rem;
-}
-.products-menu__close {
-  position: absolute;
-  top: 1.1111111111rem;
-  right: 1.3888888889rem;
-  border: none;
-  background: transparent;
+  padding: 2.2222222222rem 4.0555555556rem 2.5rem 1.4444444444rem;
 }

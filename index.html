@@ -12,7 +12,7 @@
     <div class="wrapper">
         <div class="maincontent">
 
-            <section class="hero">
+            <section datd-section-id="hero" class="hero">
                 <div class="container hero__container">
                     <header class="header">
                         <svg class="logo">
@@ -21,25 +21,25 @@
                         <nav class="menu overlay">
                             <ul class="menu__list">
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">О нас</a>
+                                    <a href="#" data-scroll-to="benefits" class="menu__link">О нас</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Батончики</a>
+                                    <a href="#" data-scroll-to="products" class="menu__link">Батончики</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Команда</a>
+                                    <a href="#" data-scroll-to="team" class="menu__link">Команда</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Меню</a>
+                                    <a href="#" data-scroll-to="products-menu" class="menu__link">Меню</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Отзывы</a>
+                                    <a href="#" data-scroll-to="reviews" class="menu__link">Отзывы</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Как мы работаем</a>
+                                    <a href="#" data-scroll-to="000" class="menu__link">Как мы работаем</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Контакты</a>
+                                    <a href="#" data-scroll-to="0000" class="menu__link">Контакты</a>
                                 </li>
                             </ul>
                         </nav>
@@ -55,7 +55,7 @@
                     <div class="hero__title-section">
                         <h1 class="hero__main-title">натуральные шоколадные батончики</h1>
                         <div class="hero__title-desc">Наши батончики идеально подходят для тех, кто следит за своим здоровьем</div>
-                        <a href="#" class="btn btn--theme--white">заказать</a>
+                        <a href="#" data-scroll-to="order" class="btn btn--theme--white">заказать</a>
                     </div>
                     <div class="hero__icons-section">
                         <ul class="features">
@@ -81,7 +81,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section benefits-section">
+            <section datd-section-id="benefits" class="section benefits-section">
                 <div class="container">
                     <div class="headline">
                         <h2 class="section__title headline__title">Почему chocco?</h2>
@@ -157,7 +157,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="section products-section">
+            <section datd-section-id="products" class="section products-section">
                 <div class="container">
                     <div class="products-slider">
                         <div class="poducts-slider__arrows">
@@ -457,7 +457,7 @@
                 </div>
 
             </section>
-            <section class="section team-section">
+            <section datd-section-id="team" class="section team-section">
                 <div class="container">
                     <h2 class="section__title team-section__title">Команда</h2>
                     <ul class="team team--desktop">
@@ -563,7 +563,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="section products-menu-section">
+            <section datd-section-id="products-menu" class="section products-menu-section">
                 
                 <h1 class="section__title products-menu-section__title">Меню</h1>
                 <ul class="products-menu">
@@ -574,7 +574,6 @@
                         </a>
                         <div class="products-menu__content">
                             <div class="products-menu__container">
-                                <button class="products-menu__close" type="button"></button>
                                 <div class="products-menu__content-text">
                                     Рекомендуем употреблять батончики вместе с кокосовым
                                     или миндальным молоком. Так и вкуснее, и полезнее.
@@ -595,7 +594,6 @@
                         </a>
                         <div class="products-menu__content">
                             <div class="products-menu__container">
-                                <button class="products-menu__close" type="button"></button>
                                 <div class="products-menu__content-text">
                                     Рекомендуем употреблять батончики вместе с кокосовым
                                     или миндальным молоком. Так и вкуснее, и полезнее.
@@ -616,7 +614,6 @@
                         </a>
                         <div class="products-menu__content">
                             <div class="products-menu__container">
-                                <button class="products-menu__close" type="button"></button>
                                 <div class="products-menu__content-text">
                                     Рекомендуем употреблять батончики вместе с кокосовым
                                     или миндальным молоком. Так и вкуснее, и полезнее.
@@ -633,7 +630,7 @@
                 </ul>
                 
             </section>
-            <section class="section reviews-section">
+            <section datd-section-id="reviews" class="section reviews-section">
                 <div class="container">
                     <h2 class="section__title reviews-section__title">Отзывы</h2>
                     <div class="reviews">
@@ -728,7 +725,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section order-section section--font-color--green">
+            <section datd-section-id="order" class="section order-section section--font-color--green">
                 <div class="container">
                     <h2 class="section__title">Закажите доставку</h2>
                     <form action="" class="form">
