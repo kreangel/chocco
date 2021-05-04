@@ -352,7 +352,6 @@ $("[data-scroll-to]").click(e => {
   const reqSection = $(`[data-section-id=${targetN}]`);
 
   performTransition(reqSection.index());
-  console.log(reqSection.index());
 });
 
 if (isMobile) {
@@ -406,3 +405,18 @@ const init = () => {
 }
 
 ymaps.ready(init);
+
+// Player
+
+let player;
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('yt-player', {
+    height: '405',
+    width: '660',
+    videoId: 'LXb3EKWsInQ',
+    //events: {
+    //  'onReady': onPlayerReady,
+    //  'onStateChange': onPlayerStateChange
+    //}
+  });
+}

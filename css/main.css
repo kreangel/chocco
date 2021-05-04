@@ -1407,6 +1407,15 @@ button {
   content: url(../img/decor/leaf-2.png);
 }
 
+.player-section__container {
+  height: 405px;
+  width: 660px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin: 0 !important;
+}
+
 .player {
   position: relative;
   display: block;
@@ -1422,6 +1431,7 @@ button {
   bottom: 0;
   background: url(../img/decor/splashscreen.jpg) center center/cover no-repeat;
   cursor: pointer;
+  display: none;
 }
 
 .player__controls {
