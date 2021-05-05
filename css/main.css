@@ -1413,7 +1413,7 @@ button {
   display: flex;
   justify-self: center;
   align-items: center;
-  margin: 0 !important;
+  margin: 0 auto;
 }
 
 .player__splash {
@@ -1424,12 +1424,48 @@ button {
   bottom: 0;
   background: url(../img/decor/splashscreen.jpg) center center/cover no-repeat;
   cursor: pointer;
-  display: none;
+}
+.player__splash-button {
+  width: 75px;
+  height: 110px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.player__start {
-  width: 11px;
+.player__playback {
   height: 16px;
+  width: 446px;
+  position: relative;
+}
+.player__playback::before {
+  content: "";
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  background: #626262;
+  display: block;
+  transform: translateY(-50%);
+}
+.player__playback-button {
+  background: #626262;
+  border-radius: 50%;
+  border: none;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.start-svg {
+  width: 14px;
+  height: 22px;
 }
 
 .player {
@@ -1441,12 +1477,16 @@ button {
 .player.active .player__splash {
   display: none;
 }
-.player.paused {
+.player.paused .start-svg {
+  display: none;
+}
+.player.paused .player__start {
   width: 14px;
   height: 22px;
   border: none;
+  position: relative;
 }
-.player.paused::after, .player.paused::before {
+.player.paused .player__start:after, .player.paused .player__start:before {
   content: "";
   display: block;
   position: absolute;
@@ -1455,10 +1495,10 @@ button {
   bottom: 0;
   background: #626262;
 }
-.player.paused::after {
+.player.paused .player__start:after {
   right: 0;
 }
-.player.paused::before {
+.player.paused .player__start:before {
   left: 0;
 }
 

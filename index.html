@@ -732,17 +732,20 @@
                         <div class="player">
                             <div class="player__wrapper">
                                 <div id="yt-player" class="player__elem"></div>
-                                <div class="player__splash"></div>
+                                <div class="player__splash">
+                                    <svg class="player__splash-button"> 
+                                        <use xlink:href="./img/sprite.svg#play-white"></use>
+                                    </svg>
+                                </div>
                             </div>
                             <div class="player__controls">
                                 <button class="player__start">
-                                    <svg class="player__start"> 
+                                    <svg viewBox="0 0 12 16" class="start-svg"> 
                                         <use xlink:href="./img/sprite.svg#play"></use>
                                     </svg>
                                 </button>
                                 <div class="player__playback">
-                                    <button class="player__playback-button">
-                                    </button>
+                                    <button class="player__playback-button"></button>
                                 </div>
                                 <div class="player__duration">
                                     <span class="player__duration-completed">0:00</span>
